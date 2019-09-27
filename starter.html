@@ -315,7 +315,10 @@ desired effect
           <div id = "one">
       <h1>This is Home Page</h1>
     </div>
-    
+ 
+    <!-- For XML to JSON Conversion  -->
+
+
     <div id = "two" hidden > 
       <h1 class="exp1">XML To JSON </h1>
       <button type="button" class="second">Copy</button>
@@ -326,18 +329,16 @@ desired effect
        -->
       <button type = "button" class = "fourth">Download</button>
       <button type = "button" class = "third">Convert</button>
-      
-
     </div>
-    <div></div>
-    <div>
+
+    <!-- <div>
         <textarea rows="20" cols="80" class = "u">
            Write or Paste your Code Here...
             </textarea>
             <textarea rows="20" cols="80" class = "u">
                 Write or Paste your Code Here...
                  </textarea>
-      </div>
+      </div> -->
        <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
         <li class="active">Here</li>
@@ -345,41 +346,70 @@ desired effect
     </section>
     
 <script>
+  var counter = 0;
 function openner()
 {
-  document.getElementById('one').style.display = 'block';
+  document.getElementById('one').innerHTML =  "This is Home Page";
+  if(counter === 1)
+  {
+    document.getElementById('two').style.display = "none";
+  }
 }
 function worker()
 {
-  
+  if(counter === 1)
+  {
+    document.getElementById('two').style.display = "none";
+  }
   document.getElementById('one').innerHTML = "This is Analytics"
 }
 function worker1()
 {
- 
+  if(counter === 1)
+  {
+    document.getElementById('two').style.display = "none";;
+  }
   document.getElementById('one').innerHTML = "This is Monitor"
 }
 function worker2()
 {
-  
+  if(counter === 1)
+  {
+    document.getElementById('two').style.display = "none";
+  }
   document.getElementById('one').innerHTML = "This is Lab"
 }
 function worker3()
 {
-  
+  if(counter === 1)
+  {
+    document.getElementById('two').style.display = "none";
+  }
   document.getElementById('one').innerHTML = "This is Ticket"
 }
-function worker4()
-{
-  
-  document.getElementById('two').style.display = "block";
-}
+
+//
+// Code For XML to Json Conversion UI 
+
+// function worker4()
+// {
+//   document.getElementById('one').innerHTML = " ";
+//   document.getElementById('two').style.display = "block";
+//   counter = 1;
+// }
 function worker5()
-{
+{ if(counter === 1)
+  {
+    document.getElementById('two').style.display = "none";
+  }
   document.getElementById('one').innerHTML = "This is JSON to XML"
 }
 function worker6()
 {
+  if(counter === 1)
+  {
+    document.getElementById('two').style.display = "none";
+  }
   document.getElementById('one').innerHTML = "This is XML to CSV"
 }
 </script>
